@@ -1,0 +1,30 @@
+/* pages/detail/detail.wxss */
+.swiper{
+  height: 520rpx;
+}
+.slide-image{
+  width: 750rpx;
+  height: 520rpx;
+}
+.detail-info{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 20rpx;
+}
+.detail-info-item{
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15rpx;
+}
+.detail-info-item-text{
+  flex: 1;
+  line-height: 1.4;
+}
+.detail-more-img{
+  width: 100%;
+}

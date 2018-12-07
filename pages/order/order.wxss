@@ -1,0 +1,77 @@
+/* pages/order/order.wxss */
+.body{
+}
+.yy-list{
+  background-color: #fff;
+  margin-top: 10rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.yy-list-title{
+  flex: auto;
+  font-size: 26rpx;
+  padding: 20rpx;
+  border-bottom:4rpx solid #ff0000;
+}
+.yy-list-item{
+  width: 750rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content:center; 
+}
+.yy-list-item-pic{
+  flex: none;
+  width: 200rpx;
+  height: 200rpx;
+  border: 1rpx solid #f4f4f4;
+  margin: 0 10rpx;
+}
+.yy-form{
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.yy-form-title{
+  font-size: 26rpx;
+  padding: 20rpx;
+  border-bottom:4rpx solid #ff0000;
+}
+.yy-form-item{
+  margin-top:30rpx;
+  width:700rpx;
+  border-bottom:1rpx solid #f4f4f4; 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80rpx;
+  font-size: 26rpx;
+}
+.yy-form-item-label{
+  width: 180rpx;
+  padding-right: 30rpx;
+  text-align: right;
+}
+.yy-form-item-input{
+  flex: 1;
+}
+.picker-date{
+  display: flex;
+  width: 710rpx;
+  padding: 20rpx;
+  margin-top: 10rpx;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  font-size: 26rpx;
+}
+.picker-date-class{
+  height: 60rpx;
+}

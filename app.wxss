@@ -1,0 +1,173 @@
+/**app.wxss**/
+@import 'lib/iconfont.wxss'
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.body {
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  height: 1110rpx;
+}
+view{
+  box-sizing: border-box;
+}
+/*color*/
+.bg-co-w{ background-color:#FFF !important;}
+.co-b{ color:#000 !important;}
+.co-w{ color:#fff !important;}
+.co-red{ color:#ff0000 !important;}
+.co-gray{ color:#bbb !important;}
+.co-333{color: #3333 !important;}
+.co-666{color: #666 !important;}
+.co-999{color: #999 !important;}
+
+/*flex*/
+.flex{display: flex;}
+.main-center{justify-content: center;}
+.main-between{justify-content: space-between;}
+.main-around{justify-content: space-around}
+.cross-center{align-items: center;}
+.cross-stretch{align-items: stretch;}
+.self-end{align-self: flex-end;}
+.self-start{align-self: flex-start;}
+.flex-auto{flex: auto;}
+.flex-none{flex:none;}
+.flex1{flex: 1;}
+
+/* Font 文字排版 */
+.f20{font-size:20rpx;}
+.f22{font-size:22rpx;}
+.f24{font-size:24rpx;}
+.f26{font-size:26rpx;}
+.f28{font-size:28rpx;}
+.f30{font-size:30rpx;}
+.f32{font-size:32rpx;}
+.f34{font-size:34rpx;}
+.f36{font-size:36rpx;}
+.f38{font-size:38rpx;}
+.f40{font-size:40rpx;}
+.fb{ font-weight:bold;}
+.fn{ font-weight:normal;}
+.lh150{ line-height:1.5;}
+.lh180{ line-height:1.8;}
+.lh200{ line-height:2;}
+
+/* 定位 */
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.bc{margin-left:auto; margin-right:auto;}
+.vm{vertical-align:middle;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.pn{position:static;}
+.zoom{zoom:1;}
+.hidden{visibility:hidden;}
+.none{display:none;}
+.block{display:block;}
+.in_block{display:inline-block;}
+.v_top{ vertical-align:top;}
+.v_mid{ vertical-align:middle;}
+.text_ind20{ text-indent:2em;}
+.ov_hid{ overflow:hidden}
+.one_lin{ overflow:hidden; display:inline-block;white-space: nowrap; text-overflow: ellipsis;}
+.two_lin{ height:40rpx; line-height:40rpx; overflow:hidden; display:inline-block;}
+.nowrap{white-space: nowrap;}
+.tb_fix{table-layout: fixed;}
+
+
+/* Width & Height */
+.w220{width:220rpx;}
+.w250{width:250rpx;}
+.w300{width:300rpx;}
+.w350{width:350rpx;}
+.w690{width:690rpx;}
+.w710{width:710rpx;}
+.w750{width:750rpx;}
+.w{width:100%;}
+
+.h{height:100%;}
+.h40{height:40rpx;}
+.h60{height:60rpx;}
+.h80{height:80rpx;}
+.h100{height:100rpx;}
+.h200{height:200rpx;}
+
+/* 边距 */
+.m10{margin:10rpx}
+.m15{margin:15rpx}
+.m30{margin:30rpx}
+.mt-1{margin-top:-1rpx}
+.mt-5{margin-top:-5rpx}
+.mt5{margin-top:5rpx}
+.mt10{margin-top:10rpx}
+.mt15{margin-top:15rpx}
+.mt20{margin-top:20rpx}
+.mt30{margin-top:30rpx}
+.mt50{margin-top:50rpx}
+.mt100{margin-top:100rpx}
+.mb5{margin-bottom:5rpx;}
+.mb10{margin-bottom:10rpx;}
+.mb20{margin-bottom:20rpx;}
+.mb30{margin-bottom:30rpx;}
+.mb50{margin-bottom:50rpx;}
+.mb100{margin-bottom:100rpx;}
+.ml-1{ margin-left:-1rpx;}
+.ml5{margin-left:5rpx;}
+.ml10{margin-left:10rpx;}
+.ml15{margin-left:15rpx;}
+.ml20{margin-left:20rpx;}
+.ml30{margin-left:30rpx;}
+.ml50{margin-left:50rpx;}
+.ml100{margin-left:100rpx;}
+.mr5{margin-right:5rpx;}
+.mr8{margin-right:8rpx;}
+.mr10{margin-right:10rpx;}
+.mr15{margin-right:15rpx;}
+.mr20{margin-right:20rpx;}
+.mr30{margin-right:30rpx;}
+.mr50{margin-right:50rpx;}
+.mr100{margin-right:100rpx;}
+
+.p5{ padding:5rpx;}
+.p10{padding:10rpx}
+.p15{padding:15rpx}
+.p30{padding:30rpx}
+.pt5{padding-top:5rpx}
+.pt10{padding-top:10rpx}
+.pt15{padding-top:15rpx}
+.pt20{padding-top:20rpx}
+.pt30{padding-top:30rpx}
+.pt50{padding-top:50rpx}
+.pt100{padding-top:100rpx}
+.pb5{padding-bottom:5rpx;}
+.pb15{padding-bottom:15rpx;}
+.pb20{padding-bottom:20rpx;}
+.pb30{padding-bottom:30rpx;}
+.pb50{padding-bottom:50rpx;}
+.pb100{padding-bottom:100rpx;}
+.pl5{padding-left:5rpx;}
+.pl10{padding-left:10rpx;}
+.pl15{padding-left:15rpx;}
+.pl20{padding-left:20rpx;}
+.pl30{padding-left:30rpx;}
+.pl40{padding-left:40rpx;}
+.pl50{padding-left:50rpx;}
+.pl100{padding-left:100rpx;}
+.pr5{padding-right:5rpx;}
+.pr10{padding-right:10rpx;}
+.pr15{padding-right:15rpx;}
+.pr20{padding-right:20rpx;}
+.pr30{padding-right:30rpx;}
+.pr50{padding-right:50rpx;}
+.pr100{padding-right:100rpx;}
+

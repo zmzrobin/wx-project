@@ -1,0 +1,38 @@
+<!--pages/order/order.wxml-->
+<view class='body'>
+  <view class='yy-list'>
+    <text class='yy-list-title'>我中意的眼镜</text>
+    <view class='yy-list-item'>
+      <image class='yy-list-item-pic' wx:for='{{list}}' wx:key='{{item.id}}' mode='aspectFit' src='{{item.src}}'></image>
+    </view>
+  </view>
+  <view class='yy-form'>
+    <text class='yy-list-title'>我要预约配镜</text>
+    <view class='yy-form-item'>
+      <text class='yy-form-item-label'>姓名：</text>
+      <input class='yy-form-item-input' placeholder="填写您的姓名" auto-focus/>
+    </view>
+    <view class="yy-form-item">
+      <text class='yy-form-item-label'>电话：</text>
+      <input class='yy-form-item-input' type='number' placeholder="填写您的电话" />
+    </view>
+    <view class="yy-form-item">
+      <text class='yy-form-item-label'>预约时间：</text>
+      <input class='yy-form-item-input' disabled='disabled' value='{{year}}年{{month}}月{{day}}日'/>
+    </view>
+    <view class='picker-date'>
+      <picker-view indicator-class="picker-date-class" style="width: 100%; height: 300rpx;" value="{{value}}" bindchange="bindChange">
+        <picker-view-column>
+          <view wx:for="{{years}}" style="line-height: 60rpx">{{item}}年</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view wx:for="{{months}}" style="line-height: 60rpx">{{item}}月</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view wx:for="{{days}}" style="line-height: 60rpx">{{item}}日</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+    <button class='mt30 h80 w f30' type="primary" form-type='submit' size="default" loading="{{loading}}" disabled="{{disabled}}">发送预约信息给大世界眼镜</button>
+  </view>
+</view>

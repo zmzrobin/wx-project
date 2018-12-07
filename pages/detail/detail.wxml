@@ -1,0 +1,35 @@
+<!--pages/detail/detail.wxml-->
+<view class='body'>
+  <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots='true'>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='detail-info mt20'>
+    <view class='detail-info-item'>
+      <text class='f40 co-red fb'>￥89.00</text>
+      <i class="iconfont icon-jiarugouwuche co-red" style="font-size:40rpx;"></i>
+    </view>
+    <view class='detail-info-item'>
+      <text class='detail-info-item-text f30 mb10'>前卫 近视眼镜男有度数超轻半框舒适 防辐射眼镜</text>
+    </view>
+    <view class='detail-info-item'>
+      <text class='detail-info-item-text f24 co-666'>品牌：MAI.ENG/麦萌</text>
+      <text class='detail-info-item-text f24 co-666'>材质：纯钛</text>
+    </view>
+    <view class='detail-info-item'>
+      <text class='detail-info-item-text f24 co-666'>款式：半框</text>
+      <text class='detail-info-item-text f24 co-666'>上市时间：2018年秋</text>
+    </view>
+  </view>
+  <view class='detail-tuijian'>
+  </view>
+  <view class='detail-more mt20'>
+  <image wx:for='{{detail}}' class="detail-more-img" mode='widthFix' src='{{item}}'></image>
+  </view>
+  <view class=''>
+
+  </view>
+</view>

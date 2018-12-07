@@ -1,0 +1,19 @@
+<!--pages/index/index.wxml-->
+<view class='body'>
+  <view class='search'>
+    <icon type='search' size="14" class='search-ico'></icon>
+    <input type='text' class='search-input'></input>
+  </view>
+  <scroll-view class='scrollview' scroll-y enable-back-to-top bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+    <view class='list'>
+      <view class='list-item' wx:for='{{yjlist}}' wx:key='{{index}}' bindtap='goDetail'>
+        <image lazy-load class='list-item-img' mode='widthFix' src='{{item.src}}'></image>
+        <text class='list-item-text'>这款眼镜可能会让你不再熬夜</text>
+        <view class='list-item-btn'>
+          <text class='f26 co-red fb'>￥89.00</text>
+          <i class="iconfont icon-jiarugouwuche co-red f34"></i>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
